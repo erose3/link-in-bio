@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     <style>
 
       html {
@@ -15,10 +16,13 @@
         padding-bottom: 40px;
         background: linear-gradient(360deg, #a6ffb4, #52f1bb, #00e0cd, #00cde6, #00b6fe, #009dff, #0080ff, #055aff);
         color:rgba(255, 255, 255, 1.0)  ;
-        font-weight: bold; }
+        font-family: 'Courier New', Courier, monospace;
+      
+      }
     
       a {
         color: rgb(49, 42, 153);
+        text-decoration: none
         }
 
       * {
@@ -31,7 +35,6 @@
   
         .image-row {
           text-align: center;
-          margin-top: 30px;
           margin-bottom: 30px
         }
 
@@ -42,16 +45,17 @@
           border-radius: 128px
         }
         .name-row {
-          font-size: 40px ;
+          font-size: 40px;
           text-align: center;
-          margin-top: 10px;
-          margin-bottom: 10px
+          margin-bottom: 20px;
+          font-size: 40px;
+          font-weight: 900;
 
         }
   
         .social-icons-row {
           text-align: center;
-          margin: 10px;
+          margin-bottom: 20px;
           display: flex;
           justify-content: space-around;
         }
@@ -59,7 +63,6 @@
         .links-row {
           font-size: 20px ;
           text-align: left;
-          margin-top: 30px;
           margin-bottom: 10px
 
         }
@@ -73,6 +76,15 @@
 
         .item{
           background-color: rgba(255, 255, 255, 0.5);
+          margin-bottom: 30px;
+          display: flex;
+          align-items: center;
+          font-weight: 900
+        }
+
+        .link-text {
+          text-align: center;
+          flex-grow: 1;
         }
   
       </style>
@@ -89,23 +101,23 @@
   
       <div class="social-icons-row">
         <a href="https://github.com/erose3" target="_blank">
-          Github
+          <i class="fa-brands fa-github"></i>
         </a>
   
         <a href="https://www.linkedin.com/in/eli-rosenthal/" target="_blank">
-          Linkedin
+          <i class="fa-brands fa-linkedin"></i>
         </a>
   
         <a href="https://www.instagram.com/eli_rosenthal/" target="_blank">
-          Instagram
+          <i class="fa-brands fa-instagram"></i>
         </a>
 
         <a href="https://venmo.com/u/elirosenthal" target="_blank">
-          Venmo
+          <i class="fa-solid fa-money-bill-transfer"></i>
         </a>
   
         <a href="https://beliapp.co/app/eli_rosenthal" target="_blank">
-          Beli
+          <i class="fa-solid fa-utensils"></i>
         </a>
       </div>
   
@@ -113,7 +125,7 @@
         <div class="item">
           <img class="thumbnail" src="/thumbnails/10Ai.png">
   
-          <a target="_blank" href="https://radical.vc/10-ai-predictions-for-2025/?utm_source=substack&utm_medium=email">
+          <a class="link-text" target="_blank" href="https://radical.vc/10-ai-predictions-for-2025/?utm_source=substack&utm_medium=email">
             10 AI Predictions For 2025
           </a>
         </div>
@@ -121,7 +133,7 @@
         <div class="item">
           <img class="thumbnail" src="/thumbnails/sales-deck.png">
   
-          <a target="_blank" href="https://medium.com/the-mission/the-greatest-sales-deck-ive-ever-seen-4f4ef3391ba0">
+          <a class="link-text" target="_blank" href="https://medium.com/the-mission/the-greatest-sales-deck-ive-ever-seen-4f4ef3391ba0">
             The Greatest Sales Deck I’ve Ever Seen
           </a>
         </div>
@@ -129,7 +141,7 @@
         <div class="item">
           <img class="thumbnail" src="/thumbnails/idea.png">
   
-          <a target="_blank" href="https://www.notboring.co/p/what-do-you-do-with-an-idea?utm_source=substack&utm_medium=email">
+          <a class="link-text" target="_blank" href="https://www.notboring.co/p/what-do-you-do-with-an-idea?utm_source=substack&utm_medium=email">
             What Do You Do With an Idea?
           </a>
         </div>
@@ -137,7 +149,7 @@
         <div class="item">
           <img class="thumbnail" src="/thumbnails/ent-handbook.png">
   
-          <a target="_blank" href="https://ehandbook.com/">
+          <a class="link-text" target="_blank" href="https://ehandbook.com/">
             Medium's Entrepreneurship Handbook
           </a>
         </div>
