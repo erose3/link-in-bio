@@ -25,9 +25,6 @@
         text-decoration: none
         }
 
-      * {
-      border: 1px red dashed;
-    }
         .main-container {
           max-width: 640px;
           margin: auto;
@@ -36,13 +33,15 @@
         .image-row {
           text-align: center;
           margin-bottom: 30px
+          
         }
 
         .avatar-image{
           width: 128px;
           height: 128px;
           object-fit: cover;
-          border-radius: 128px
+          border-radius: 128px;
+          box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.55);
         }
         .name-row {
           font-size: 40px;
@@ -79,7 +78,11 @@
           margin-bottom: 30px;
           display: flex;
           align-items: center;
-          font-weight: 900
+          font-weight: 900;
+          border-radius: 1000px;
+          padding: 5px;
+          padding-right: 53px;
+          box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.55);
         }
 
         .link-text {
